@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px;
+    background-color: #1C2321;
+    color: #a1cfde;;
+    height: 100%;
+}
+#TopMenu {
+    background-color: #000080;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    height: 75px;
+    z-index: 100;
+}
+
+#MeLogo {
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+    border-radius: 16px;
+}
+#Greetings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: -15px;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(#000080,#000080, #1C2321);
+}
+#GreetingsH1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 64px;
+
+}
+.GreetingsH3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 38px;
+}
+#First-Ab {
+    display: flex;
+    align-items: center;
+
+    padding-top: 52px;
+    padding-left: 40px;
+}
+.element {
+    width: 80%; 
+    margin:10%; 
+    margin-top: 6%;
+}

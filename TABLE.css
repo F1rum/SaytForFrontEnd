@@ -1,0 +1,75 @@
+@media (max-width: 600px) {
+    #map{
+        padding: 15px;
+        width: 90%;
+        height: 100px;
+    }
+    th, td {
+        border: 1px solid rgb(114, 113, 113);
+        padding: 2px 2px;
+    }
+    #tableBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 600px) {
+    #map{
+        padding: 35px;
+        width: 90%;
+        height: 320px;
+    }
+    th, td {
+        border: 1px solid rgb(114, 113, 113);
+        padding: 8px 8px;
+    }
+    #tableBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    main {
+        display: flex;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(109, 108, 108);
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+  
+thead, tfoot {
+    background-color: rgb(172, 222, 243);
+}
+
+tr:hover{
+    color: blueviolet;
+}
+#LeftMenuChenge {
+    display: flex;
+    flex-direction: column;
+}
+#LeftMenuChenge p {
+    padding: 0px;
+    margin: 0px;
+}
+
+#Semestr2{
+    display: none;
+}
+  

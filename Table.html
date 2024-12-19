@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./NavStile.css" />
+    <link rel="stylesheet" href="./TABLE.css" />
+    <script>
+        let i = 1;
+        function ChahgePract() {
+            if (i == 1) {
+                const LeftMenuChenge = document.getElementById("LeftMenuChengeSem");
+                LeftMenuChenge.textContent ='1 Семестра';
+                const On1Sem = document.getElementById('Semestr1');
+                On1Sem.style.display = 'none';
+                const On2Sem = document.getElementById('Semestr2');
+                On2Sem.style.display = 'block';
+                i++
+            }
+            else {
+                const LeftMenuChenge = document.getElementById("LeftMenuChengeSem");
+                LeftMenuChenge.textContent ='2 Семестра';
+                const On1Sem = document.getElementById('Semestr1');
+                On1Sem.style.display = 'block';
+                const On2Sem = document.getElementById('Semestr2');
+                On2Sem.style.display = 'none';
+                i--
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="lek"></div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: #032379;">
+            <div class="container-fluid">
+            <div>
+              <a class="navbar-brand" href="Student.html"><img src="IMG/ItsMeReal.jpg" id="logo" alt="Логотип" ></a>
+              <a class="navbar-brand">Меню</a>
+            </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="student -1 .html">Товары</a>
+                        </div>
+                        
+                    
+                    <div class="nav-item" id="MeOnLeft">
+                        <div id="Me">
+                            <p id="Meobj">Эфбо-08-23</p>
+                            <p id="Meobj">Морозов Дмитрий Сергеевич</p>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside id="LeftMenu">
+            <div class="vjuh">
+                <h3>Навигация</h3>
+                <a href="#lek">Лекции</a>
+                <a href="#prak">Практики</a>
+                <a href="#map">Адрес</a>
+                <a onclick="ChahgePract()" id="LeftMenuChenge" href="#prak"><p>Посмотреть<br>практики</p><p id="LeftMenuChengeSem">2 Семестра</p></a>
+            </div>
+        </aside>
+        <div id="tableBox">
+            <h1>Первый семестр</h1>
+            <h2>Лекции</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Тема</th>
+                        <th>Посещение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Основы языка НТМL</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Углубленное изучение HTML</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Основы работы с СЅЅ</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Адаптивная верстка. Flexbox и Grid Layout</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>Bootstrap - работа с фреймворком</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>Основы языка JavaScript</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>Работа с DOM и событиями в JavaScript</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <div id="prak"></div>
+                    <tr>
+                        <th>8</th>
+                        <td>Введение в GitHub и GitHub Pages</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="Semestr1">
+                <h2>Практики 1 Семестр</h2>
+                <table>
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Тема</th>
+                        <th>Посщ.</th>
+                        <th>Вып.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Основы языка НTML</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Формы и кнопки в HTML</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Таблицы и интерактивные элементы HTML</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Основы работы с СЅЅ</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>Работа с классами в СЅЅ</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>Работа с сетками и разметкой в HTML</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>Адаптивная вёрстка</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>Bootstrap</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>Основы языка JavaScript</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>Базовые задачи на ЈЅ</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <td>ДОМ-структура приложений и работа с объектами в языке ЈЅ</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>12</th>
+                        <td>Встраивание скриптов</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>13</th>
+                        <td>Отладка сценариев</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>14</th>
+                        <td>Анимации и работа с ними</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>15</th>
+                        <td>Github</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>16</th>
+                        <td>Защита проекта</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>    
+            <div id="Semestr2">
+                <h2>Практики 2 Семестр</h2>
+                <table>
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Тема</th>
+                        <th>Посщ.</th>
+                        <th>Вып.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Базовое бэкенд-приложение</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>HTTP-запросы</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>JSON и работа с ним</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>HTTP-ответы</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>Проектирование API</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>Роутинг и его настройка</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>NoSQL базы данных</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>Обеспечение авторизации и доступа пользователей</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>Работа сторонних сервисов уведомления и авторизации</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>Основы ReactJS</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <td>Работа с компонентами динамической DOM</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>12</th>
+                        <td>Использование хуков в React</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>13</th>
+                        <td>-</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>14</th>
+                        <td>Основы микросервисной архитектуры</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>15</th>
+                        <td>Разработка классических модулей веб-приложений</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>16</th>
+                        <td>Разработка классических модулей веб-приложений</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="sogl" value="1">
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <div id="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1dccee09362bbe4c54171c158a3ada7fea7e1dce6e47e79c744fb4e12f5d4898&amp;source=constructor" width="90%" height="100%" frameborder="0"></iframe>
+            </div>
+            <div>
+                <h2>Рабочая программа</h2>
+                <object data="Files/Рабочая программа.pdf"></object>
+            </div>
+        </div>
+        <button class="UpButton"><a href="#top">/|\</a></button>
+    </main>
+    <footer>
+        <p>@МорозовДмитрийСергеевич</p>
+    </footer>
+</body>
+</html>

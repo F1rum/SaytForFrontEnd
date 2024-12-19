@@ -1,0 +1,112 @@
+@media (max-width: 600px) {
+    #GUI2 {
+        justify-content: center;
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 1px;
+        padding-left: 0px;
+    }
+    .vjuh {
+        display: flex;
+        
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+    
+        top: 113px;
+        z-index: 999;
+        font-size: 1.4rem;
+    
+        text-decoration: solid;
+    }
+    .vjuh a, .vjuh p {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .vjuh h3 {
+        margin: 3px;
+        font-size: 14px;
+    }
+    #LeftMenu {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+        border: solid 2px;
+        border-color: black; 
+    }
+    
+}
+@media (min-width: 600px) {
+    .vjuh a, .vjuh p {
+        padding: 20px;
+    }
+    #GUI2 {
+        justify-content: center;
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 1px;
+    }
+    .vjuh {
+        display: flex;
+        
+        flex-direction: column;
+        padding-right: 40px;
+        position: sticky;
+    
+        top: 113px;
+        z-index: 999;
+        font-size: 1.4rem;
+    
+        text-decoration: solid;
+    }
+    #LeftMenu {
+        display: flex;
+        flex-direction: column;
+        padding-right: 40px;
+        border: solid 2px;
+        border-color: black; 
+    }
+    
+}
+#MegaGUI{
+    display: flex;
+    color: rgb(199, 204, 124); 
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    background-color: rgb(3, 35, 121);
+    flex-direction: column; 
+}
+#GUI {
+    justify-content: space-between;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+#Me {
+    display: flex;
+    
+    align-items: flex-end;
+    flex-direction: column;
+}
+.navbar-expand-lg{
+    display: flex;
+}
+.container-fluid{
+    align-items: center;
+}
+.navbar-nav{
+    align-items: center;
+}
+.navbar-collapse{
+    justify-content: center;
+}
+.bg-body-tertiary{
+    background-color: #032379 !important;
+}
